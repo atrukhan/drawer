@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="15.0.2" class="java.beans.XMLDecoder">
+ <int>4</int>
+ <object class="sample.Segment">
+  <void property="lineWidth">
+   <double>1.0</double>
+  </void>
+  <void property="x1">
+   <double>267.0</double>
+  </void>
+  <void property="x2">
+   <double>420.0</double>
+  </void>
+  <void property="y1">
+   <double>125.0</double>
+  </void>
+  <void property="y2">
+   <double>186.0</double>
+  </void>
+ </object>
+ <object class="sample.Segment">
+  <void property="lineWidth">
+   <double>1.0</double>
+  </void>
+  <void property="x1">
+   <double>219.0</double>
+  </void>
+  <void property="x2">
+   <double>289.0</double>
+  </void>
+  <void property="y1">
+   <double>272.0</double>
+  </void>
+  <void property="y2">
+   <double>306.0</double>
+  </void>
+ </object>
+ <object class="sample.Triangle">
+  <void property="lineWidth">
+   <double>1.0</double>
+  </void>
+  <void property="type">
+   <int>5</int>
+  </void>
+  <void property="x1">
+   <double>112.0</double>
+  </void>
+  <void property="x2">
+   <double>215.0</double>
+  </void>
+  <void property="y1">
+   <double>142.0</double>
+  </void>
+  <void property="y2">
+   <double>339.0</double>
+  </void>
+ </object>
+ <object class="sample.Triangle">
+  <void property="lineWidth">
+   <double>1.0</double>
+  </void>
+  <void property="type">
+   <int>5</int>
+  </void>
+  <void property="x1">
+   <double>460.0</double>
+  </void>
+  <void property="x2">
+   <double>616.0</double>
+  </void>
+  <void property="y1">
+   <double>398.0</double>
+  </void>
+  <void property="y2">
+   <double>540.0</double>
+  </void>
+ </object>
+</java>

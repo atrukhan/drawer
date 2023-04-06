@@ -1,0 +1,27 @@
+{
+  "checkSum": "490083a5613fa8719d2b553589b88c48",
+  "object": [
+    {
+      "type": "sample.Segment",
+      "properties": {
+        "x1": 292.0,
+        "y1": 167.0,
+        "x2": 569.0,
+        "y2": 306.0,
+        "type": 2,
+        "lineWidth": 1.0
+      }
+    },
+    {
+      "type": "sample.Segment",
+      "properties": {
+        "x1": 401.0,
+        "y1": 337.0,
+        "x2": 209.0,
+        "y2": 478.0,
+        "type": 2,
+        "lineWidth": 1.0
+      }
+    }
+  ]
+}

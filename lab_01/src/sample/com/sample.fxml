@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.com.Controller">
+   <children>
+      <AnchorPane fx:id="anchorPaneLeft" prefHeight="700.0" prefWidth="251.0" style="-fx-background-color: #fafafa;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.6103895902633667" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="23.0" layoutY="21.0" text="Shapes" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_Segment" layoutX="21.0" layoutY="46.0" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" />
+            <Button fx:id="btn_Rectangle" layoutX="97.0" layoutY="46.0" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" />
+            <Button fx:id="btn_Square" layoutX="171.0" layoutY="46.0" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" />
+            <Button fx:id="btn_Circle" layoutX="21.0" layoutY="117.0" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" />
+            <Button fx:id="btn_Ellipse" layoutX="97.0" layoutY="117.0" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" />
+            <Button fx:id="btn_Triangle" layoutX="171.0" layoutY="117.0" maxHeight="60.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" />
+            <Slider fx:id="slider_Width" blockIncrement="1.0" layoutX="22.0" layoutY="286.0" majorTickUnit="1.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="207.0" showTickLabels="true" />
+            <Label layoutX="22.0" layoutY="263.0" text="LIneWidth" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="331.0" text="RGB" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="15.0" />
+               </font>
+            </Label>
+            <Slider fx:id="slider_Color_Red" blockIncrement="1.0" layoutX="23.0" layoutY="359.0" majorTickUnit="50.0" max="255.0" prefHeight="14.0" prefWidth="207.0" showTickLabels="true" />
+            <Slider fx:id="slider_Color_Green" blockIncrement="1.0" layoutX="23.0" layoutY="397.0" majorTickUnit="50.0" max="255.0" prefHeight="14.0" prefWidth="207.0" showTickLabels="true" />
+            <Slider fx:id="slider_Color_Blue" blockIncrement="1.0" layoutX="22.0" layoutY="430.0" majorTickUnit="50.0" max="255.0" prefHeight="14.0" prefWidth="207.0" showTickLabels="true" />
+            <Rectangle fx:id="rectangle_Color" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="25.0" layoutY="476.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Button fx:id="btn_Clear" layoutX="26.0" layoutY="613.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Clear" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_Draw" layoutX="28.0" layoutY="542.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Draw" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Canvas fx:id="canvas" height="700.0" layoutX="251.0" onMousePressed="#mousePressed" onMouseReleased="#mouseReleased" width="799.0" />
+      <AnchorPane fx:id="anchorPaneRight" layoutX="1049.0" prefHeight="700.0" prefWidth="251.0" style="-fx-background-color: #fafafa;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.6103895902633667" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="btn_Write_To_File" layoutX="26.0" layoutY="613.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="To file" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_Draw_From_File" layoutX="28.0" layoutY="542.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Draw from file" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="18.0" />
+               </font>
+            </Button>
+            <ListView fx:id="listView" layoutX="26.0" layoutY="25.0" onMousePressed="#list_mousePressed" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="btn_Delete" layoutX="26.0" layoutY="308.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Delete" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="18.0" />
+               </font>
+            </Button>
+            <Slider fx:id="slider_Width_Change" blockIncrement="1.0" layoutX="25.0" layoutY="257.0" majorTickUnit="1.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="207.0" showTickLabels="true" />
+            <Label layoutX="25.0" layoutY="234.0" text="LIneWidth" textFill="#d06a6a">
+               <font>
+                  <Font name="Roboto Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
